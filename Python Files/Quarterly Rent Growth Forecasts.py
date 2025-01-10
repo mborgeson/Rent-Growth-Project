@@ -702,7 +702,8 @@ for epoch in range(num_epochs):
     # print(f"Epoch {epoch+1}/{num_epochs}, Train Loss: {train_loss:.6f}")
 
 # Optionally save your final model weights
-checkpoint_filepath = os.path.abspath("best_model_fold_torch.pt")
+checkpoint_filepath = os.path.abspath(r"C:\Users\MattBorgeson\OneDrive - B&R Capital\Programming Projects\Rent Growth Forecasting\Output Files\Best Model Weights/best_model_fold_torch (Quarterly).pt")
+# checkpoint_filepath = os.path.abspath("best_model_fold_torch.pt")
 torch.save(model_lstm.state_dict(), checkpoint_filepath)
 
 # To load them later:
